@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+.promocion{
+    background-color:rgb(221,221,221) ;
+    width: 100%;
+    height: 50px;
+    color: #9e9d9d;
+    font-weight: bold;
+    display: flex;/*los iconos y el <p> pasan a estar en fila porque por defecto es flex-direction row*/
+    justify-content: space-between;/* mayor espacio entre los iconos y el <p>*/
+    align-items: center;/*centro en el eje y*/
+}
+
+.icono{/*ajuste del tamaño y margen de los iconos*/
+    height: 40px;
+    width:40px ;
+    margin: 20px;
+    cursor: pointer;/*cambio de cursor de flecha a mano*/
+}
+
+.contenedor-menu{
+    width: 100%;
+    height: 100px;
+    display: flex; /*el logo y el menu pasan a estar en fila*/
+    justify-content: space-between;/* mayor espacio entre el logo y el menu*/
+    align-items: center;
+    padding:20px ;
+    font-weight: bold; 
+}
+
+.logo{/*estilo al h2 para hacer el logo*/
+    border: 2px solid black;
+    padding:10px ;
+    font-size:20px;
+}
+
+a{/* quite el subrayado del elemento ancla <a> y le cambie color de fuente a negro */
+    text-decoration: none;
+    color: black;  
+}
+
+ul {display: flex;/* el menu pasa de estar en columna a estar en fila*/
+    list-style: none;/*quite las viñetas del menu */
+}
+li{
+    margin: 30px;
+}
+nav a{
+    padding: 10px;
+}
+nav a:hover{ /*con esta pseudo-clase hover al pasar el cursor por cada seccion del menu cambia el color de fondo y de fuente */
+    background-color:#09b7c7;
+    color: white;
+    border-radius: 5px;
+}
+ 
+main{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-image: url("beach.jpg");/*agrego imagen de fondo*/
+    background-position: center;
+    background-size: cover;
+    display: flex;/*aplico lo siguiente para centrar el titulo del main:*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;      
+}
+
+h1{/*ajuste el ancho para que el h1 quede en dos lineas*/
+    width: 15%;
+    font-size: 50px;
+    font-weight: lighter;
+    text-align: center;   
+}
+
+h3{ 
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;   
+}
+
+main span{
+    color: black;     
+}
